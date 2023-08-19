@@ -48,7 +48,7 @@ session gets started. For unit files placed in subdirectories within
 /etc/containers/systemd/user/${UID}/ and the other user unit search paths,
 Quadlet will recursively search and run the unit files present in these subdirectories.
 
-Note: When a Quadlet is starting, Podman often pulls one more container images which may take a considerable amount of time.
+Note: When a Quadlet is starting, Podman often pulls one or more container images which may take a considerable amount of time.
 Systemd defaults service start time to 90 seconds, or fails the service. Pre-pulling the image or extending
 the systemd timeout time for the service using the *TimeoutStartSec* Service option can fix the problem.
 
